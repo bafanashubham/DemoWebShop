@@ -13,5 +13,6 @@ Feature: Register to DemoWebshop site
     And  I enter confirmPass "Test@12"
     And I click on Register button
     Then validate the "Your registration completed" message
+    
 
   
