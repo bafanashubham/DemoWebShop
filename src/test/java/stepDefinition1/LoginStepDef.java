@@ -35,4 +35,20 @@ public class LoginStepDef extends BaseTest{
 	public void user_should_be_successfully_login() {
 	   login.validateLogout();
 	}
+	@When("user click on Electronics link")
+	public void user_click_on_electronics_link() {
+	    login.clickOnElectronic();
+	}
+	@Then("user click on Cell phone image")
+	public void user_click_on_cell_phone_image() {
+	  login.clickOnCell();
+	}
+	@Then("user click on add to cart")
+	public void user_click_on_add_to_cart() {
+		login.clickOnaddcart();
+	}
+	@Then("user varify the success message after adding")
+	public void user_varify_the_success_message_after_adding() {
+	    login.VerifyMsg();
+	}
 }

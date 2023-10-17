@@ -8,3 +8,7 @@ Feature: login to DemowebShop
     And user enter password "Test@12"
     And user click on Login button
     Then user should be successfully login
+    When user click on Electronics link
+    Then user click on Cell phone image
+    And user click on add to cart
+    Then user varify the success message after adding

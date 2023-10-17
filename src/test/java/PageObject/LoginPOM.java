@@ -27,6 +27,20 @@ public class LoginPOM{
 	logOutBtn.isDisplayed();
 
 	}
+	public void clickOnElectronic() {
+		ElectBtn.click();
+	}
+	
+	public void clickOnCell() {
+		cellphone.click();
+	}
+	
+	public void clickOnaddcart() {
+		addcart.click();
+	}
+	public void VerifyMsg() {
+		cartmsg.isDisplayed();
+	}
 	
 	WebDriver driver;
 	
@@ -52,5 +66,17 @@ public class LoginPOM{
 		@FindBy(xpath = "//a[@class=\"ico-logout\"]")
 		private WebElement logOutBtn;
 		
-	
+		@FindBy(xpath = "(//a[@href=\"/electronics\"])[1]")
+		private WebElement ElectBtn;
+		
+		@FindBy(xpath = "//img[@alt=\"Picture for category Cell phones\"]")
+		private WebElement cellphone;
+		
+		@FindBy(xpath = "(//input[@value=\"Add to cart\"])[1]")
+		private WebElement addcart;
+		
+		@FindBy(xpath = "//p[text()='The product has been added to your ']")
+		private WebElement cartmsg;
+		
+		
 }
