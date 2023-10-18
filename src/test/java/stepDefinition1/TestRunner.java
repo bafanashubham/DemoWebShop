@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		
-	features="C:\\Users\\shubham.bafana\\Downloads\\Project\\DemoWebProject\\src\\test\\resources\\Features\\Login.feature"	, 
+	features="C:\\Users\\shubham.bafana\\Downloads\\Project\\DemoWebProject\\src\\test\\resources\\Features\\giftcard.feature"	, 
 	glue= {"stepDefinition1"},
 	dryRun=false,		
 	plugin= {"pretty","html:target/Reports/OrangeHRM.html"},
